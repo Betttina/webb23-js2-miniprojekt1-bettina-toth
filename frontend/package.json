@@ -1,0 +1,19 @@
+{
+  "description": "",
+  "name": "frontsax",
+  "main": "stensax.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel ./src/index.html",
+    "build": "parcel ./src/index.html --dist-dir ../docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del-cli": "^5.1.0",
+    "express": "^4.18.2",
+    "parcel": "^2.9.3"
+  }
+
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* För att undvika scrollning */
+}
+
+body {
+    font-family: Comfortana, sans-serif;
+    text-align: center;
+    background-color: #e3aade;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: Comfortana, sans-serif;
+
+}
+
+#nameInput {
+    margin-bottom: 20px;
+}
+
+
+#score {
+    margin-bottom: 20px;
+}
+
+#choices {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#restartButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 220px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#playerChoice, #computerChoice
+{
+    display: none;
+}
+
+/* ny kod*/
+
+#highScoreboard {
+    background-color: #a7d0deff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.object {
+    margin: 15px 0;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.object div {
+    font-family: Comfortana, sans-serif;
+    font-size: 20px;
+}
+
+#highScoreList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#highScoreList li {
+    display: flex;
+    align-items: center;
+    font-family: Comfortana, sans-serif;
+    background: white;
+    margin: 1vh;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+
+/* div för att visa current player and score */
+#game {
+    display: none;
+    background-color: #a7d0deff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px; /* Rundade hörn */
+}
+
+#playerName {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Comfortana, sans-serif;
+}
+
+#score {
+    background-color: white; /* Vit bakgrundsfärg för poäng */
+    color: #000000; /*textfärg för poäng*/
+    padding: 10px;
+    border-radius: 5px; /* Rundade hörn för poäng */
+    margin-top: 10px;
+}
+
+
+
+/* ny kod för hela hemsidan*/
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 30% auto; /* Delar upp i två kolumner */
+    height: 100%;
+}
+
+.high-score {
+    background-color: #a7d0deff;
+    margin: auto 40px; /* Margin till både mitten och sidan */
+    padding: 10px;
+
+
+}
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    /* Övriga stilar för innehållet på höger sida */
+}
+

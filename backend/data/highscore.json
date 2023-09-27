@@ -1,0 +1,22 @@
+[
+  {
+    "playerName": "Alice",
+    "currentScore": 10
+  },
+  {
+    "playerName": "Bob",
+    "currentScore": 8
+  },
+  {
+    "playerName": "Charlie",
+    "currentScore": 5
+  },
+  {
+    "playerName": "Bamse",
+    "currentScore": 5
+  },
+  {
+    "playerName": "David",
+    "currentScore": 3
+  }
+]
