@@ -84,31 +84,7 @@ app.post("/api/savehighscore", (req, res) => {
         }
     });
 });
-/*
-app.post("/api/savehighscore", (req, res) => {
-    const newHighScore = req.body;
 
-    highScoreList.push(newHighScore);
-
-    highScoreList.sort((a, b) => b.currentScore - a.currentScore);
-
-    highScoreList = highScoreList.slice(0, 5);
-
-    // Skriv uppdaterad highscore-lista till highscore.json-filen
-    fs.writeFile(
-        highScoreFilePath,
-        JSON.stringify(highScoreList, null, 2),
-        "utf-8",
-        (error) => {
-            if (error) {
-                console.error("Fel vid skrivning av highscore.json:", error);
-                res.status(500).json({ success: false, error: "Något gick fel." });
-            } else {
-                res.json({ success: true });
-            }
-        }
-    );
-});*/
 
 app.listen(3000, () => {
     console.log(`Server is running on port ${port}`);
